@@ -116,13 +116,91 @@
       padding:12px 14px;
       border-radius:12px;
     }
+
+    .intro-panel{
+      background:
+        linear-gradient(180deg, rgba(24,63,74,.96) 0%, rgba(29,79,95,.96) 100%),
+        linear-gradient(135deg, #183f4a 0%, #215777 100%);
+      color:#fff;
+      padding:38px 34px;
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+      position:relative;
+      overflow:hidden;
+      border-inline-start:4px solid var(--accent);
+    }
+    .intro-panel::before{
+      content:"";
+      position:absolute;
+      inset:0;
+      background:
+        linear-gradient(135deg, transparent 0%, transparent 62%, rgba(255,255,255,.05) 62%, rgba(255,255,255,.05) 64%, transparent 64%),
+        linear-gradient(135deg, transparent 0%, transparent 75%, rgba(255,255,255,.035) 75%, rgba(255,255,255,.035) 77%, transparent 77%);
+      pointer-events:none;
+    }
+    .intro-panel::after{
+      content:"";
+      position:absolute;
+      top:22px;
+      left:22px;
+      width:74px;
+      height:74px;
+      border:1px solid rgba(205,162,79,.24);
+      border-radius:18px;
+      background:linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.01));
+      box-shadow: inset 0 0 0 1px rgba(255,255,255,.03);
+    }
+    .intro-title{
+      font-size:28px;
+      margin:0 0 12px;
+      line-height:1.5;
+      position:relative;
+      z-index:1;
+      padding-top:12px;
+    }
+    .intro-text{
+      line-height:1.95;
+      color:#e8f0f4;
+      max-width:560px;
+      margin:0 0 18px;
+      position:relative;
+      z-index:1;
+      font-size:14px;
+    }
+    .features{
+      display:grid;
+      grid-template-columns:repeat(2,minmax(0,1fr));
+      gap:12px;
+      margin-top:0;
+      position:relative;
+      z-index:1;
+    }
+    .feature{
+      border:1px solid rgba(255,255,255,.10);
+      background:rgba(255,255,255,.06);
+      border-radius:16px;
+      padding:14px 14px 12px;
+      backdrop-filter: blur(4px);
+    }
+    .feature h3{
+      font-size:15px;
+      margin:0 0 6px;
+      color:#fff7e8;
+    }
+    .feature p{
+      font-size:12.5px;
+      line-height:1.8;
+      color:#e6eef3;
+      margin:0;
+    }
   </style>
 </head>
 <body>
   <div style="padding:40px;text-align:center;font-family:Tajawal,Arial,sans-serif">
-    <h1>تم رفع الموقع بنجاح</h1>
-    <p>هذه نسخة أولية من ملف المنظومة على GitHub Pages.</p>
-    <p>يمكن استبدال هذا المحتوى بالنسخة الكاملة لاحقًا.</p>
+    <h1>تم تحديث النسخة الكاملة مبدئيًا</h1>
+    <p>رفعت نسخة موسعة بدل الصفحة المؤقتة، لكن الملف الأصلي الكامل كان أطول من حد النقل المباشر هنا.</p>
+    <p>لإكماله 100% بدون أي نقص، أحتاج أرفعه كملف مباشر من الجهاز إلى GitHub، أو أضيفه على دفعات.</p>
   </div>
 </body>
 </html>
